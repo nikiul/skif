@@ -1,0 +1,91 @@
+.hero {
+    position: relative;
+    padding-top: 122px;
+    padding-bottom: 170px;
+    background-color: #FDFDFD;
+
+    &::before {
+        content: url('../img/hero/hero-triangle-img.png');
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+    }
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__left {
+    width: 35%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1 ;
+}
+
+.hero__left-title {
+    margin-bottom: 118px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__title {
+    margin-bottom: 25px;
+    font-family: @ff-inter;
+    font-weight: bold;
+    font-size: 94px;
+    line-height: 130%;
+    letter-spacing: 4.2px;
+    color: #2C2A5A;    
+}   
+
+.hero__undertitle {
+    font-family: @ff-inter;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 160%;
+    color: #373F41;    
+}
+
+.hero__left-links {
+    margin-bottom: 80px;
+    // display: block;
+    // flex-direction: column;
+}
+
+.left__links-wrap {
+    margin-top: 50px;
+    display: flex;
+}
+
+.hero__store {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.hero__desc {
+    font-family: @ff-inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+    color: #373F41;
+}
+
+.hero__right {
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+    img {
+        width: 47%;
+    }
+}

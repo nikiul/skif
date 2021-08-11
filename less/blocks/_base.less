@@ -1,0 +1,81 @@
+// font-family: 'Manrope', sans-serif;
+// font-family: 'Inter', sans-serif;
+// font-family: 'Geometria', sans-serif;
+
+@ff-manrope: 'Manrope', sans-serif;
+
+@ff-inter: 'Inter', sans-serif;
+
+@ff-mulish: 'Mulish', sans-serif;
+
+@ff-geometria: 'Geometria', sans-serif;
+
+
+.none {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: @ff-inter;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;    
+}
+
+.container {
+    max-width: 1280px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: @ff-inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 68px;
+    line-height: 64px;
+    color: #2C2A5A;    
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 22.5px 19px;
+    background: #1B6ED6;
+    border-radius: 8px;
+    font-family: @ff-manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #FCFCFC;
+    text-decoration: none;
+    cursor: pointer;
+}

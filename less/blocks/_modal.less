@@ -1,0 +1,143 @@
+.modal__wrap {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
+
+.modal-wrap--active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    width: 1060px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+    padding-left: 126px;
+    padding-right: 126px;
+    padding-bottom: 98px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border-radius: 10px;   
+    z-index: 3; 
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 68px;
+    right: 60px;
+    cursor: pointer;
+}
+
+.modal__title {
+    margin-bottom: 50px;
+    font-family: @ff-inter;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    color: #4937A5;   
+    text-align: center; 
+}
+
+.modal__form {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__inputs {
+    position: relative;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input__col {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-bottom: 15px;
+        font-family: @ff-manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 30px;
+        color: #0A0F29;        
+    }
+}
+
+.form__input-name {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 13px;
+    border: 1px solid rgba(73, 55, 165, 0.5);
+    border-radius: 2px;    
+    outline: none;
+}
+
+.form__input-number {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 13px;
+    border: 1px solid rgba(73, 55, 165, 0.5);
+    border-radius: 2px;    
+    outline: none;
+}
+
+.input__error {
+    border: 1px solid #E3000F;
+}
+
+.input__col-active input {
+    border: 1px solid #E3000F;
+}
+
+.input__col-active .text__error {
+    opacity: 1;
+    z-index: auto;    
+}
+
+.text__error {
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    bottom: -25px;
+    font-family: @ff-manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #E3000F;
+}
+
+.form__btn {
+    padding: 27px 117px;
+    background: #4937A5;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.form__policy {
+    font-family: @ff-inter;
+    font-size: 24px;
+    line-height: 16px;
+    text-align: center;
+    color: #4937A5;
+    text-decoration: none;
+}   
