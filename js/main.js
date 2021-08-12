@@ -15,10 +15,6 @@ if(ModalClose){
 }
 
 $(document).ready(function(){
-  
-    // $('input[type="tel"]').inputmask('+7 (999) 999 99 99', {
-    //   clearMaskOnLostFocus: true,
-    // });
     
     $('.modal__form').submit(function () {
       var form = $(this);
